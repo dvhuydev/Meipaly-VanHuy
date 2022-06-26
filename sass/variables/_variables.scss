@@ -1,0 +1,44 @@
+$maincolor: #e62b4a;
+
+$text: #888888;
+
+$black: #000;
+
+$white: #fff;
+
+
+@mixin container {
+    width: 120rem;
+    margin: auto;
+    text-align: center;
+    padding: 7rem 0;
+}
+
+
+@mixin content {
+    width: 100%;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+
+@mixin h2 {
+    font-size: 5rem;
+    font-weight: 400;
+    color: $black;
+}
+
+@mixin pfooter{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    color: $text;
+}
+
+
+@mixin phead{
+    font-size: 1.4rem;
+    color: $maincolor;
+    font-weight: 400;
+    // margin-bottom: 3rem;
+}

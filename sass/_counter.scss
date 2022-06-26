@@ -1,0 +1,28 @@
+@import "./variables/variables";
+
+.counter{
+    width: 100%;
+    height: auto;
+    background: $black;
+    .counter__container{
+        width: 120rem;
+        margin: auto;
+        color: $white;
+        padding: 10rem 0;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        .counter__item{
+            .counter__active{
+                @include h2;
+                color: $white;
+            }
+            .counter__content{
+                text-transform: uppercase;
+                @include pfooter;
+                margin: 0;
+            }
+        }
+    }
+}

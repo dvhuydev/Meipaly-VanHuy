@@ -1,0 +1,75 @@
+@import "./variables/variables";
+
+
+.contact{
+    width: 100%;
+    height: 100%;
+
+    .contact__container{
+        @include container;
+        .contact__title{
+            @include content;
+
+            h2{
+                @include h2;
+            }
+            p{
+                @include pfooter;
+                font-size: 1.4rem;
+            }
+        }
+
+        .contact__content{
+            margin-top: 5rem;
+            display: flex;
+            gap: 1.5rem;
+            height: 100%;
+            .contact__maps{
+                width: 60%;
+                height: 100%;
+                iframe{
+                    width: 100%;
+                }
+            }
+
+            .contact__form{
+                width: 40%;
+                height: 100%;
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    input{
+                        font-size: 1.5rem;
+                        padding: 1.5rem;
+                        border: 1px solid $text;
+                        border-radius: 2px;
+                        margin-bottom: 30px;
+                    }
+                    textarea{
+                        font-size: 1.5rem;
+                        padding: 1.5rem;
+                        border: 1px solid $text;
+                        border-radius: 2px;
+                        margin-bottom: 30px;  
+                        height: 19rem;  
+                    }
+
+                    .button{
+                        padding: 20px 30px;
+                        border: 1px solid $black;
+                        background-color: $black;
+                        color: $white;
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+                        letter-spacing: .1rem;
+                        cursor: pointer;
+                        transition: all .5s;
+                        &:hover{
+                            background: $maincolor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

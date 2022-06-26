@@ -1,0 +1,39 @@
+@import "./variables/variables";
+
+
+.video{
+    width: 100%;
+    height: auto;
+    background-image: url(./../images/bussiness_img_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    .video__container{
+        @include container;
+        .video__title{
+            
+            @include content;
+            p{
+                @include phead;
+            }
+            h2{
+                @include h2;
+                color: $white;
+            }
+            div{
+                @include pfooter;
+                text-transform: capitalize;
+            }
+        }
+        .video__content{
+            margin-top: 5rem;
+            width: 100%;
+            height: auto;
+            video{
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+}

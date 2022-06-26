@@ -1,0 +1,66 @@
+@import "./variables/variables";
+
+
+.carousel{
+    width: 100%;
+    position: relative;
+    height: 90vh;
+    
+    background-image: url(./../images/home_slider.jpg);
+    background-position: top;
+    background-size: cover;
+    align-items: center;
+    .carousel__container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        .carousel__content{
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            color: $white;
+
+            h2{
+                font-size: 100%;
+            }
+            h1{
+                padding: 2rem;
+                font-size: 300%;
+                line-height: 8rem;
+            }
+            button{
+                text-transform: uppercase;
+                cursor: pointer;
+                border: 1px solid transparent;
+                font-size: 2rem;
+                color: $white;
+                background: $maincolor;
+                padding: 1rem 2rem;
+
+                &:hover{
+                    background: #af2239;
+                }
+            }
+        }
+
+        .carousel__scroll{
+            margin-top: 8rem;
+            i{
+                font-size: 3.5rem;
+                color: $text;
+                animation: animaDown 1s linear 0s infinite;
+            }
+
+            @keyframes animaDown {
+                49%{
+                    transform: translateY(70%);
+                }
+                50%{
+                    opacity: 0;
+                    transform: translateY(-70%);
+                }
+            }
+        }
+    }
+}

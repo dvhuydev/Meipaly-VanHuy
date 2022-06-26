@@ -1,0 +1,58 @@
+@import "./variables/variables";
+
+
+.slider{
+    width: 100%;
+    height: auto;
+    background: $black;
+    .slider__container{
+        @include container;
+
+        .slider__content{
+            @include content;
+            
+            p{
+                @include phead;
+
+            }
+            h2{
+                @include h2;
+                color: $white;
+            }
+            div{
+                @include pfooter;
+                text-transform: capitalize;
+            }
+        }
+        .mySwiper{
+            width: 100%;
+            height: auto;
+            margin-top: 3rem;
+            .swiper__item{
+                // width: 75%;
+                margin: auto;
+                // width: 120rem;
+                // margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .item{
+                    // margin: 0 1rem;
+                    background: $white;
+                    color: $text;
+                    margin: auto;
+                    margin-bottom: 1rem;
+                    max-width: 23rem;
+                    padding: 5rem;
+                    i{
+                        font-size: 5rem;
+
+                    }
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}

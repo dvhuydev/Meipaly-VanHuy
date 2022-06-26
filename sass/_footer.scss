@@ -1,0 +1,40 @@
+@import "./variables/variables";
+
+
+
+.footer{
+    width: 100%;
+    height: auto;
+    background: $black;
+
+    .footer__container{
+        display: flex;
+        // padding: 15rem 0;
+        justify-content: space-between;
+        @include container;
+        align-items: center;
+        .footer__left{
+            p{
+                @include phead;
+                color: $white;
+                // font-size: rem;
+            }
+        }
+        .footer__right{
+            i{
+                width: 5rem;
+                height: 5rem;
+                background: $text;
+                font-size: 2rem;
+                cursor: pointer;
+                line-height: 5rem;
+                border-radius: 50%;
+                color: $white;
+                margin: 0 .5rem;
+                &:hover{
+                    background: $maincolor;
+                }
+            }
+        }
+    }
+}
