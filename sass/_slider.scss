@@ -29,21 +29,30 @@
             height: auto;
             margin-top: 3rem;
             .swiper__item{
-                // width: 75%;
-                margin: auto;
-                // width: 120rem;
-                // margin: auto;
-                display: flex;
-                justify-content: space-between;
+                margin-bottom: 5rem;
+                width: 100%;
                 align-items: center;
                 .item{
-                    // margin: 0 1rem;
                     background: $white;
                     color: $text;
                     margin: auto;
                     margin-bottom: 1rem;
                     max-width: 23rem;
                     padding: 5rem;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background: $maincolor;
+                        width: .5rem;
+                        height: 0;
+                        transition: all .3s ease;
+                    }
+                    &:hover::before{
+                        height: 100%;
+                    }
                     i{
                         font-size: 5rem;
 
@@ -52,6 +61,27 @@
                         font-size: 1.4rem;
                     }
                 }
+            }
+
+            .panigation__button{
+                transition: all .5s ease;
+                .swiper-pagination-bullet{
+                    background: $white;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    display: inline-block;
+                    transition: all .5s ease;
+                }
+                span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+                    background: $maincolor;
+                    
+                }
+                &:hover{
+                    .swiper-pagination-bullet{
+                        padding: 0 .3rem;
+                        background-color: white;
+                    }
+                } 
             }
         }
     }
