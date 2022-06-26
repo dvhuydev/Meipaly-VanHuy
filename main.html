@@ -11,10 +11,16 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
 
+    <link rel="stylesheet" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css" />
 
-    <!-- SWIPER -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
+        <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Counter Up -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 
     <!-- Font AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -89,59 +95,12 @@
 
 
                 <div class="swiper mySwiper">
-                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper swiper__item">
-                        <!-- Slides -->
                         <div class="swiper-slide">
                             <div class="item">
                                 <i class="fa-solid fa-dice-d6"></i>
                                 <p>
-                                    App Mobile <br />
-                                    Development
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item">
-                                <i class="fab fa-autoprefixer"></i>
-                                <p>
-                                    App Mobile <br />
-                                    Development
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item">
-                                <i class="fab fa-500px"></i>
-                                <p>
-                                    App Mobile <br />
-                                    Development
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item">
-                                <i class="fa fa-blog"></i>
-                                <p>
-                                    App Mobile <br />
-                                    Development
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item">
-                                <i class="fab fa-battle-net"></i>
-                                <p>
-                                    App Mobile <br />
-                                    Development
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item">
-                                <i class="fa fa-memory"></i>
-                                <p>
-                                    App Mobile <br />
+                                    App 1 Mobile <br />
                                     Development
                                 </p>
                             </div>
@@ -150,7 +109,7 @@
                             <div class="item">
                                 <i class="fa-solid fa-dice-d6"></i>
                                 <p>
-                                    App Mobile <br />
+                                    App 2 Mobile <br />
                                     Development
                                 </p>
                             </div>
@@ -159,17 +118,41 @@
                             <div class="item">
                                 <i class="fa-solid fa-dice-d6"></i>
                                 <p>
-                                    App Mobile <br />
+                                    App 3 Mobile <br />
                                     Development
                                 </p>
                             </div>
                         </div>
-                        ...
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <i class="fa-solid fa-dice-d6"></i>
+                                <p>
+                                    App 4 Mobile <br />
+                                    Development
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <i class="fa-solid fa-dice-d6"></i>
+                                <p>
+                                    App 5 Mobile <br />
+                                    Development
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <i class="fa-solid fa-dice-d6"></i>
+                                <p>
+                                    App 6 Mobile <br />
+                                    Development
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- If we need scrollbar -->
-                    <!-- <div class="swiper-scrollbar"></div> -->
+                    <div class="swiper-pagination panigation__button"></div>
                 </div>
             </div>
         </div>
@@ -186,165 +169,165 @@
                     </div>
                 </div>
 
-                <div class="blog__item">
+                <div class="blog__item" id="blog__items">
                     <div class="blog__image">
-                        <img src="./images/grid-metro-1.jpg" alt="">
-                        <div class="blog__title">
-                            <div class="blog__icons">
-                                <a href="./images/grid-metro-1.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                        <a href="./images/grid-metro-1.jpg" id="selector__items">
+                            <img src="./images/grid-metro-1.jpg" alt="">
+                            <div class="blog__title">
+                                <div class="blog__icons">
                                     <i class="fa fa-search-plus"></i>
-                                </a>
+                                </div>
+                                <div class="blog__text">
+                                    <p>log</p>
+                                    <h2>flippin bird</h2>
+                                </div>
                             </div>
-                            <div class="blog__text">
-                                <p>log</p>
-                                <h2>flippin bird</h2>
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="blog__image ">
-                        <img src="./images/grid-metro-2.jpg" alt="metro">
-                        <div class="blog__title">
-                            <div class="blog__icons">
-                                <a href="./images/grid-metro-2.jpg" data-fancybox="gallery" data-caption="Caption #2">
+                    <div class="blog__image">
+                        <a href="./images/grid-metro-2.jpg" id="selector__items">
+                            <img src="./images/grid-metro-2.jpg" alt="">
+                            <div class="blog__title">
+                                <div class="blog__icons">
                                     <i class="fa fa-search-plus"></i>
-                                </a>
+                                </div>
+                                <div class="blog__text">
+                                    <p>log</p>
+                                    <h2>flippin bird</h2>
+                                </div>
                             </div>
-                            <div class="blog__text">
-                                <p>log</p>
-                                <h2>flippin bird</h2>
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="blog__image ">
-                        <img src="./images/grid-metro-3.jpg" alt="metro">
-                        <div class="blog__title">
-                            <div class="blog__icons">
-                                <a href="./images/grid-metro-3.jpg" data-fancybox="gallery" data-caption="Caption #2">
+                    <div class="blog__image">
+                        <a href="./images/grid-metro-3.jpg" id="selector__items">
+                            <img src="./images/grid-metro-3.jpg" alt="">
+                            <div class="blog__title">
+                                <div class="blog__icons">
                                     <i class="fa fa-search-plus"></i>
-                                </a>
+                                </div>
+                                <div class="blog__text">
+                                    <p>log</p>
+                                    <h2>flippin bird</h2>
+                                </div>
                             </div>
-                            <div class="blog__text">
-                                <p>log</p>
-                                <h2>flippin bird</h2>
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="blog__image ">
-                        <img src="./images/grid-metro-4.jpg" alt="metro">
-                        <div class="blog__title">
-                            <div class="blog__icons">
-                                <a href="./images/grid-metro-4.jpg" data-fancybox="gallery" data-caption="Caption #2">
+                    <div class="blog__image">
+                        <a href="./images/grid-metro-4.jpg" id="selector__items">
+                            <img src="./images/grid-metro-4.jpg" alt="">
+                            <div class="blog__title">
+                                <div class="blog__icons">
                                     <i class="fa fa-search-plus"></i>
-                                </a>
+                                </div>
+                                <div class="blog__text">
+                                    <p>log</p>
+                                    <h2>flippin bird</h2>
+                                </div>
                             </div>
-                            <div class="blog__text">
-                                <p>log</p>
-                                <h2>flippin bird</h2>
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="blog__image ">
-                        <img src="./images/grid-metro-5.jpg" alt="metro">
-                        <div class="blog__title">
-                            <div class="blog__icons">
-                                <a href="./images/grid-metro-5.jpg" data-fancybox="gallery" data-caption="Caption #2">
+                    <div class="blog__image">
+                        <a href="./images/grid-metro-5.jpg" id="selector__items">
+                            <img src="./images/grid-metro-5.jpg" alt="">
+                            <div class="blog__title">
+                                <div class="blog__icons">
                                     <i class="fa fa-search-plus"></i>
-                                </a>
+                                </div>
+                                <div class="blog__text">
+                                    <p>log</p>
+                                    <h2>flippin bird</h2>
+                                </div>
                             </div>
-                            <div class="blog__text">
-                                <p>log</p>
-                                <h2>flippin bird</h2>
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="blog__image ">
-                        <img src="./images/grid-metro-6.jpg" alt="metro">
-                        <div class="blog__title">
-                            <div class="blog__icons">
-                                <a href="./images/grid-metro-6.jpg" data-fancybox="gallery" data-caption="Caption #2">
+                    <div class="blog__image">
+                        <a href="./images/grid-metro-6.jpg" id="selector__items">
+                            <img src="./images/grid-metro-6.jpg" alt="">
+                            <div class="blog__title">
+                                <div class="blog__icons">
                                     <i class="fa fa-search-plus"></i>
-                                </a>
+                                </div>
+                                <div class="blog__text">
+                                    <p>log</p>
+                                    <h2>flippin bird</h2>
+                                </div>
                             </div>
-                            <div class="blog__text">
-                                <p>log</p>
-                                <h2>flippin bird</h2>
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="blog__image ">
-                        <img src="./images/grid-metro-7.jpg" alt="metro">
-                        <div class="blog__title">
-                            <div class="blog__icons">
-                                <a href="./images/grid-metro-7.jpg" data-fancybox="gallery" data-caption="Caption #2">
+                    <div class="blog__image">
+                        <a href="./images/grid-metro-7.jpg" id="selector__items">
+                            <img src="./images/grid-metro-7.jpg" alt="">
+                            <div class="blog__title">
+                                <div class="blog__icons">
                                     <i class="fa fa-search-plus"></i>
-                                </a>
+                                </div>
+                                <div class="blog__text">
+                                    <p>log</p>
+                                    <h2>flippin bird</h2>
+                                </div>
                             </div>
-                            <div class="blog__text">
-                                <p>log</p>
-                                <h2>flippin bird</h2>
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="blog__image ">
-                        <img src="./images/grid-metro-8.jpg" alt="metro">
-                        <div class="blog__title">
-                            <div class="blog__icons">
-                                <a href="./images/grid-metro-8.jpg" data-fancybox="gallery" data-caption="Caption #2">
+                    <div class="blog__image">
+                        <a href="./images/grid-metro-8.jpg" id="selector__items">
+                            <img src="./images/grid-metro-8.jpg" alt="">
+                            <div class="blog__title">
+                                <div class="blog__icons">
                                     <i class="fa fa-search-plus"></i>
-                                </a>
+                                </div>
+                                <div class="blog__text">
+                                    <p>log</p>
+                                    <h2>flippin bird</h2>
+                                </div>
                             </div>
-                            <div class="blog__text">
-                                <p>log</p>
-                                <h2>flippin bird</h2>
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="blog__image ">
-                        <img src="./images/grid-metro-9.jpg" alt="metro">
-                        <div class="blog__title">
-                            <div class="blog__icons">
-                                <a href="./images/grid-metro-9.jpg" data-fancybox="gallery" data-caption="Caption #2">
+                    <div class="blog__image">
+                        <a href="./images/grid-metro-9.jpg" id="selector__items">
+                            <img src="./images/grid-metro-9.jpg" alt="">
+                            <div class="blog__title">
+                                <div class="blog__icons">
                                     <i class="fa fa-search-plus"></i>
-                                </a>
+                                </div>
+                                <div class="blog__text">
+                                    <p>log</p>
+                                    <h2>flippin bird</h2>
+                                </div>
                             </div>
-                            <div class="blog__text">
-                                <p>log</p>
-                                <h2>flippin bird</h2>
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="blog__image ">
-                        <img src="./images/grid-metro-10.jpg" alt="metro">
-                        <div class="blog__title">
-                            <div class="blog__icons">
-                                <a href="./images/grid-metro-2.jpg" data-fancybox="gallery" data-caption="Caption #2">
+                    <div class="blog__image">
+                        <a href="./images/grid-metro-10.jpg" id="selector__items">
+                            <img src="./images/grid-metro-10.jpg" alt="">
+                            <div class="blog__title">
+                                <div class="blog__icons">
                                     <i class="fa fa-search-plus"></i>
-                                </a>
+                                </div>
+                                <div class="blog__text">
+                                    <p>log</p>
+                                    <h2>flippin bird</h2>
+                                </div>
                             </div>
-                            <div class="blog__text">
-                                <p>log</p>
-                                <h2>flippin bird</h2>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-
         
         <div class="counter">
             <div class="counter__container">
                 <div class="counter__item">
-                    <p class="counter__active">8750</p>
+                    <p class="counter__active">8,750</p>
+                    <!-- <input id="active" value="0"> -->
                     <p class="counter__content">prject completed</p>
                 </div>
                 <div class="counter__item">
@@ -356,7 +339,7 @@
                     <p class="counter__content">cups of coffe</p>
                 </div>
                 <div class="counter__item">
-                    <p class="counter__active">9774</p>
+                    <p class="counter__active">9,774</p>
                     <p class="counter__content">happy clients</p>
                 </div>
             </div>
@@ -400,7 +383,7 @@
                         <form action>
                             <input type="text" placeholder="Username">
                             <input type="email" placeholder="Email Address">
-                            <textarea  placeholder="Ask a Question..." name="" id="" cols="30" rows="10"></textarea>
+                            <textarea placeholder="Ask a Question..." name="" id="" cols="30" rows="10"></textarea>
                             <button class="button">submit</button>
                         </form>
                     </div>
@@ -415,22 +398,29 @@
                     <p>© 2021 UI-CYBERSOFT. ALL RIGHTS RESERVED.</p>
                 </div>
                 <div class="footer__right">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-twitter"></i>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
 
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Anime JS Animation -->
+    <!-- <script src="./animejs/lib/anime.min.js"></script> -->
+    <script src="./javascript/counter.js"></script>
 
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
+            slidesPerView: 5,
             spaceBetween: 30,
+            loop: true,
             freeMode: true,
+            autoplay: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -438,15 +428,13 @@
         });
     </script>
 
-
-    <!-- Anime JS Animation -->
-    <script src="./anime/lib/anime.min.js"></script>
-
-
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
     <!-- JQUERY -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 </body>
 
 </html>
